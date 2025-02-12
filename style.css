@@ -7,6 +7,7 @@
 
 body {
     background: linear-gradient(to left, #ffffff, #d0cfcf);
+    overflow-x: hidden;
 }
 
 nav {
@@ -645,4 +646,220 @@ footer {
         }
     }
 
+}
+
+@media screen and (max-width: 768px) {
+
+
+    nav {
+        width: 100%;
+        height: 250px;
+
+
+        .nav-con {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+
+        }
+
+        .logo {
+            padding-top: 20px;
+            font-size: 12px;
+        }
+
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+            li {
+                width: 100%;
+                margin-left: 0px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        border: 1px solid red;
+
+        article {
+            width: 100%;
+            margin-top: 100px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .img-slide {
+            width: 100%;
+            border-radius: 0;
+
+            figure {
+                width: 100%;
+                border-radius: 0;
+
+                img {
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+
+    .container-two {
+        width: 100%;
+        height: 1100px;
+        border-radius: 0px;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        article {
+            width: 100%;
+            margin: 50px 0 25px 0;
+
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .con-allcard {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .con-img {
+                width: 350px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                figure {
+                    width: 80%;
+                    height: 100%;
+                    border-radius: 10px 0px 0px 10px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+                }
+
+                .text-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            #Five {
+                display: flex;
+                width: 350px;
+                height: 100px;
+
+                figure {
+                    width: 80%;
+                    height: 100%;
+                    border-radius: 10px 0px 0px 10px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-three {
+        width: 100%;
+        height: 1800px;
+
+        article {
+            width: 100%;
+            height: 25%;
+            padding: 0;
+            margin: 0;
+
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .con-allcard-two {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 220px);
+            grid-template-rows: repeat(4, 300px);
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+
+            .con-img-two {
+                .text-card-two {
+
+                    h1 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5rem;
+
+        .Copyright {
+            width: 90%;
+
+            h1 {
+                font-size: 40px;
+
+                .logo-in-footer {
+                    width: 100%;
+
+                    ul li a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
